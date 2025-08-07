@@ -1,0 +1,52 @@
+
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --heading-font-size: 24px;
+    --body-font-size: 16px;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--body-font-size);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    font-size: var(--heading-font-size);
+}
+
+.button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: aqua;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+.card {
+    width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .title {
+    color: rgb(17, 17, 16);
+    width: 10px;
+    font-size: 50px;
+}
+
+.card .description {
+    font-size: var(--body-font-size);
+}
