@@ -1,0 +1,53 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      padding: 2rem;
+    }
+
+    .accordion {
+      max-width: 600px;
+      margin: auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .accordion-item:last-child {
+      border-bottom: none;
+    }
+
+    .accordion input[type="checkbox"] {
+      display: none;
+    }
+
+    .accordion-label {
+      display: block;
+      padding: 1rem;
+      cursor: pointer;
+      background-color: #1e90ff;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .accordion-label:hover {
+      background-color: #187bcd;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      background-color: #fafafa;
+      transition: max-height 0.4s ease;
+      padding: 0 1rem;
+    }
+
+    .accordion input[type="checkbox"]:checked ~ .accordion-content {
+      max-height: 200px;
+      padding: 1rem;
+    }
+  
